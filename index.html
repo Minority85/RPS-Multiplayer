@@ -16,12 +16,24 @@
 
 </head>
 
-<body>
+<body onunload="closeWindow()">
 
     <div class="container mw-100">
         <div class="row">
             <div id="playerOne" class="col-3"></div>
-            <div id="middle" class="col-6"></div>
+            <div id="middle" class="col-6">
+                <div class="score1" style="float: left; display: none;">
+                    <p style="text-decoration: underline;">Player 1 Score</p>
+                    <p class="win1" style="text-align: left;"></p>
+                    <p class="lose1" style="text-align: left;"></p>
+                </div>
+                <div class="score2" style="float: right; display: none;">
+                    <p style="text-decoration: underline;">Player 2 Score</p>
+                    <p class="win2" style="text-align: left;"></p>
+                    <p class="lose2" style="text-align: left;"></p>
+                </div>
+                <div id="bottom"></div>
+            </div>
             <div id="playerTwo" class="col-3"></div>
         </div>
     </div>

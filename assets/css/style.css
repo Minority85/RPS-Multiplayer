@@ -14,7 +14,8 @@ img {
 }
 
 #playerOne,
-#playerTwo {
+#playerTwo,
+#bottom {
     font-size: xx-large;
     text-align: center;
     font-weight: bolder;
@@ -27,6 +28,20 @@ img {
     max-height: 700px;
     min-height: 700px;
     text-align: center;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 0;
+    margin-left: 100px;
+    margin-bottom: 200px;
+}
+
+.score1,
+.score2 {
+    font-size: xx-large;
+    /* text-align: center; */
+    font-weight: bolder;
 }
 
 .oneButton,
